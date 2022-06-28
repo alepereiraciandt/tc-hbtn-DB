@@ -2,8 +2,8 @@ public class Cliente {
     private int id;
     private String nome;
     private int idade;
-    private String cpf;
-    private String RG;
+    private String Cpf;
+    private String Rg;
 
     public void setId(int id) {
         this.id = id;
@@ -15,14 +15,6 @@ public class Cliente {
 
     public void setIdade(int idade) {
         this.idade = idade;
-    }
-
-    public void setCPF(String cpf) {
-        this.cpf = cpf;
-    }
-
-    public void setRG(String RG) {
-        this.RG = RG;
     }
 
     public int getId() {
@@ -37,11 +29,19 @@ public class Cliente {
         return idade;
     }
 
-    public String getCpf() {
-        return cpf;
+    public void setCpf(String cpf) {
+        Cpf = cpf;
     }
 
-    public String getRG() {
-        return RG;
+    public void setRg(String rg) {
+        Rg = rg;
+    }
+
+    public String getCpf() {
+        return Cpf;
+    }
+
+    public String getRg() {
+        return Rg;
     }
 }
